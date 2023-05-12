@@ -1,0 +1,21 @@
+# source
+source:
+  storage_type: "pfs"
+  fsname: "xxxx"
+  dirs:
+    - "/dir/in/pfs"
+  use_short_path: true
+  short_path_with_dir: false
+  list_recursion_thread_num: 6
+  list_prefix_levels_use_delimiter: 16
+  multipart_thread_num: 128
+
+# target
+target:
+  storage_type: "s3"
+  region: "cn-beijing"
+  bucket_name: "xxxx"
+  bucket_url: "tos-s3-cn-beijing.ivolces.com"
+  access_key: ""
+  secret_key: ""
+  object_prefix: ""

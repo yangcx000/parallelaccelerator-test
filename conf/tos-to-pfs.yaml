@@ -1,0 +1,25 @@
+# source
+source:
+  storage_type: "s3"
+  region: "cn-beijing"
+  bucket_name: "xxxx"
+  bucket_url: "tos-s3-cn-beijing.ivolces.com"
+  access_key: ""
+  secret_key: ""
+  prefixs:
+    - "xxxx"
+  objects:
+  objectlistFiles:
+  use_short_path: false
+  short_path_with_dir: false
+  list_recursion_thread_num: 4
+  list_prefix_levels_use_delimiter: 6
+  multipart_thread_num: 32
+  batch_size_per_worker: 16
+  inflight_requests_per_worker: 128
+
+# target
+target:
+  storage_type: "pfs"
+  fsname: "langfang"
+  dir_prefix: "/dir/in/pfs"
